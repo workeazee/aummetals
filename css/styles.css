@@ -45,3 +45,17 @@ header::before{
     height: 100vh;
     padding: 8px;
 }
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 100px;
+    background: rgba(0,0,0,.2);
+}
+
+::-webkit-scrollbar-thumb {
+    border: 1px solid rgba(255,255,255,.4);
+}
+::-webkit-scrollbar {
+    -webkit-border-radius: 100px;
+    background-color: rgba(0,0,0,0);
+    width: 9px;
+}
+
