@@ -1,0 +1,10 @@
+:root {
+    --accent-white: white;
+    --accent-red: #ef4b3f;
+    --main-bg-color: white;
+}
+
+
+body{
+    background: var(--main-bg-color);
+}
