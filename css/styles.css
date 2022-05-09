@@ -81,7 +81,7 @@ header::before {
 @media (max-width:0) {
     header h1 {
         font-size: 2.5rem;
-        line-height: 1;
+
     }
 }
 /* sm */
@@ -89,7 +89,7 @@ header::before {
     header h1 {
         /* font-size: 3.125rem; */
         font-size: 2.5rem;
-        line-height: 1;
+
     }
 }
 /* md */
