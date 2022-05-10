@@ -97,6 +97,18 @@ header::before {
 .slick-arrow{
   all: unset;
 }
+.carousel {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.slick-track img{
+ width: auto;
+ /* max-width: 500px; */
+ height: 350px;
+ object-fit: cover;
+ border: 10px solid green;
+ 
+}
 .your-class {
   position: relative;
 }
