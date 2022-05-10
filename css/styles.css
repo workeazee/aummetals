@@ -1,216 +1,209 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 :root {
-    --accent-white: white;
-    --accent-red: #ef4b3f;
-    --main-bg-color: white;
-    --paragraph: #212121;
-    --main-text: var(--accent-white)
+  --accent-white: white;
+  --accent-red: #ef4b3f;
+  --main-bg-color: white;
+  --paragraph: #212121;
+  --main-text: var(--accent-white)
 }
 
 
 body {
-    background: var(--main-bg-color);
-    font-family: 'Roboto', sans-serif;
+  background: var(--main-bg-color);
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
-    background: url(https://ssl.gstatic.com/atari/images/aristotle-header-dark.jpg);
-    /* background-size: 100% 100%; */
-    background-size: cover;
-    background-repeat: no-repeat;
+  background: url(https://ssl.gstatic.com/atari/images/aristotle-header-dark.jpg);
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header h1 {
-    color: var(--main-text);
-    text-align: center;
-    font-size: 3.75rem;
-    font-family: Roboto, sans-serif;
-    letter-spacing: -0.5px;
-    /* font-weight: 550; */
-    text-size-adjust: 100%;
-    /* line-height: 75.6px */
+  color: var(--main-text);
+  text-align: center;
+  font-size: 3.75rem;
+  font-family: Roboto, sans-serif;
+  letter-spacing: -0.5px;
+  /* font-weight: 550; */
+  text-size-adjust: 100%;
+  /* line-height: 75.6px */
 }
 
 h1 .underline {
-    height: 8px;
-    background-color: #ef4b3f;
-    opacity: 1;
-    width: 100px;
-    margin: 10px auto;
+  height: 8px;
+  background-color: #ef4b3f;
+  opacity: 1;
+  width: 100px;
+  margin: 10px auto;
 }
 
 header::before {
-    background-color: #212121;
-    opacity: 0.5;
+  background-color: #212121;
+  opacity: 0.5;
 }
 
 .home-header {
-    /* border: 1px solid red; */
-    height: 100vh;
-    padding: 8px;
-    position: relative;
+  /* border: 1px solid red; */
+  height: 100vh;
+  padding: 8px;
+  position: relative;
 
 }
 
 .down-caret {
-    opacity: 0.5;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
+  opacity: 0.5;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
 }
 
 .down-caret:hover {
-    opacity: 1;
+  opacity: 1;
 }
+
 .home-slider__title {
-    color: var(--accent-red);
-    text-decoration: underline;
-    font-size: 1.5rem;
-    font-weight: 700;
+  color: var(--accent-red);
+  text-decoration: underline;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
+
 .home-slider__txt {
-    color: var(--paragraph);
-    font-family: 'Open Sans', sans-serif;
+  color: var(--paragraph);
+  font-family: 'Open Sans', sans-serif;
 }
+
 .home-slider__img {
-    margin: 0 auto;
-    display: block;
+  margin: 0 auto;
+  display: block;
+}
+.slick-arrow{
+  all: unset;
+}
+.your-class {
+  position: relative;
+}
+#sl1 .slick-prev, .pull-left{
+  position: absolute;
+  border: 1px solid red;
+  left: 0;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#sl1 .slick-next, .pull-right{
+  position: absolute;
+  border: 1px solid blue;
+  right: 0;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.slick-next .pull-right{
+
 }
 /* slider start */
 /* Parent wrapper to carousel. Width can be changed as needed. */
-.carousel-wrapper {
-    overflow: hidden;
-    width: 90%;
-    margin: auto;
-  }
-  
-  /* Apply 'border-box' to 'box-sizing' so border and padding is included in the width and height. */
-  .carousel-wrapper * {
-    box-sizing: border-box;
-  }
-  
-  /* We'll be using the 'transform' property to move the carousel's items, so setting the 'transform-style' to 'preserve-3d' will make sure our nested elements are rendered properly in the 3D space. */
-  .carousel {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-  
-  /* By default we're hiding items (except the initial one) until the JS initiates. Elements are absolutely positioned with a width of 100% (as we're styling for mobile first), letting the content's height dictate the height of the carousel. Our magic property here for all our animation needs is 'transition', taking the properties we wish to animate 'transform' and 'opacity', along with the length of time in seconds. */
-  .carousel__photo {
-    opacity: 0;
-    position: absolute;
-    top:0;
-    width: 100%;
-    margin: auto;
-    padding: 1rem 4rem;
-    z-index: 100;
-    transition: transform .5s, opacity .5s, z-index .5s;
-  }
-  
-  /* Display the initial item and bring it to the front using 'z-index'. These styles also apply to the 'active' item. */
-  .carousel__photo.initial,
-  .carousel__photo.active {
-    opacity: 1;
-    position: relative;
-    z-index: 900;
-  }
-  
-  /* Set 'z-index' to sit behind our '.active' item. */
-  .carousel__photo.prev,
-  .carousel__photo.next {
-    z-index: 800;
-  }
-  
-  /* Translate previous item to the left */
-  .carousel__photo.prev {
-    transform: translateX(-100%);
-  }
-  
-  /* Translate next item to the right */
-  .carousel__photo.next {
-    transform: translateX(100%);
-  }
-  
-  /* Style navigation buttons to sit in the middle, either side of the carousel. */
-  .carousel__button--prev,
-  .carousel__button--next {
-    position: absolute;
-    top:50%;
-    width: 3rem;
-    height: 3rem;
-    background-color: #FFF;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    cursor: pointer; 
-    z-index: 1001; /* Sit on top of everything */
-    border:1px solid black;
-  /*  opacity: 0;  Hide buttons until carousel is initialised 
-    transition:opacity 1s;*/
-  }
-  
-  .carousel__button--prev {
-    left:0;
-  }
-  
-  .carousel__button--next {
-    right:0;
-  }
-  
-  /* Use pseudo elements to insert arrows inside of navigation buttons */
-  .carousel__button--prev::after,
-  .carousel__button--next::after {
-    content: " ";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 50%;
-    left: 54%;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    transform: translate(-50%, -50%) rotate(135deg);
-  }
-  
-  .carousel__button--next::after {
-    left: 47%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
+/*  */
+.carousel__photo{
+  width: 100px;
+  height: 200px;
+}
+.ham{
+  background-color: rgba(0, 0, 0, .2);
+}
+.navbar-toggler {
+  all: unset!important;
+
+}
+.navbar-toggler:focus {
+  outline: 0!important;
+  all: unset!important;
+}
+
+#navbarTogglerDemo03 a{
+  color: #FFF;
+  font-family: 'Open Sans';
+}
+#navbarTogglerDemo03 a.active{
+  font-family: 'Open Sans';
+  font-weight: 800;
+}
+.ham>svg {
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  margin: 0;
+
+}
+.arrow-wrapper {
+  height:50px;
+  width: 50px;
+  background: rgba(0,0,0,0.5);
+  border-radius:100%;
+}
+.arrow-right {
+
+}
+.arrow-left {
+
+}
+/* .slick-prev:before {
+  content: "<";
+  color: red;
+  font-size: 30px;
+}
+
+.your-class.slick-next {
+  all:unset!important;
+  content: ">";
+  color: red;
+  font-size: 30px;
+} */
 /* slider end */
 /* xs */
 @media (max-width:0) {
-    header h1 {
-        font-size: 2.5rem;
+  header h1 {
+    font-size: 2.5rem;
 
-    }
+  }
 }
+
 /* sm */
 @media (max-width:576px) {
-    header h1 {
-        /* font-size: 3.125rem; */
-        font-size: 2.5rem;
+  header h1 {
+    /* font-size: 3.125rem; */
+    font-size: 2.5rem;
 
-    }
+  }
 }
+
 /* md */
 @media (max-width:768px) {}
+
 /* lg */
 
 @media (max-width:992px) {}
+
 /* xl */
 @media (max-width:1200px) {}
 
 ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 100px;
-    background: rgba(0, 0, 0, .2);
+  -webkit-border-radius: 100px;
+  background: rgba(0, 0, 0, .2);
 }
 
 ::-webkit-scrollbar-thumb {
-    border: 1px solid rgba(255, 255, 255, .4);
+  border: 1px solid rgba(255, 255, 255, .4);
 }
 
 ::-webkit-scrollbar {
-    -webkit-border-radius: 100px;
-    background-color: rgba(0, 0, 0, 0);
-    width: 9px;
+  -webkit-border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 9px;
 }
