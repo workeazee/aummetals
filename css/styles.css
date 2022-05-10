@@ -60,7 +60,20 @@ header::before {
   position: absolute;
   bottom: 0;
 }
-
+.arrow-wrapper{
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-self: center
+}
+.icon-left{
+  margin: 0 auto;
+  transform: rotate(90deg);
+}
+.icon-right {
+  margin: 0 auto;
+  transform: rotate(270deg);
+}
 .down-caret:hover {
   opacity: 1;
 }
@@ -89,19 +102,45 @@ header::before {
 }
 #sl1 .slick-prev, .pull-left{
   position: absolute;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   left: 0;
   z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
+  transform: translateY(-40%);
+}
+ .slick-dots {
+  display:flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+.slick-dots > li button {
+  visibility: hidden;
+  padding: 0;
+  margin: 10px 3px;
+  text-align: center;
+}
+.slick-dots > li::marker {
+  color: #bdc1c6;
+  padding: 0;
+  font-size: 35px;
+  line-height: 10px;
+  text-align: center;
+  display: inline-block;
+  /* margin: 0 auto; */
+}
+.slick-dots > li.slick-active::marker {
+  color: var(--accent-red);
+  /* height: 50px; */
+  /* font-size: 50px;
+  line-height: 20px; */
 }
 #sl1 .slick-next, .pull-right{
   position: absolute;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   right: 0;
   z-index: 2;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
+  transform: translateY(-40%);
 
 }
 .slick-next .pull-right{
