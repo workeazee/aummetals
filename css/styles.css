@@ -53,6 +53,13 @@ header::before {
   position: relative;
 
 }
+.other-header {
+  /* border: 1px solid red; */
+  height: 350px;
+  padding: 8px;
+  position: relative;
+
+}
 
 .down-caret {
   opacity: 0.5;
@@ -84,10 +91,19 @@ header::before {
   font-size: 1.5rem;
   font-weight: 700;
 }
+.home-slider__title-about {
+  color: var(--accent-red);
+  font-size: 2.5rem;
 
+}
 .home-slider__txt {
   color: var(--paragraph);
   font-family: 'Open Sans', sans-serif;
+}
+.home-slider__txt-about {
+  color: var(--paragraph);
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
 }
 
 .home-slider__img {
