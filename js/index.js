@@ -41,7 +41,13 @@ $(document).ready(function(){
       $( " .arrow-wrapper",this ).css( 'display','none' );
     });
   }
-
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar-fixed-top"); 
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      // $( "#navbarTogglerDemo03 a",this ).toggleClass('nav-text-color');
+    });
+  });
  })();
  })();
 
