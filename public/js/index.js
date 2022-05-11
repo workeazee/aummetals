@@ -21,7 +21,7 @@ $(document).ready(function(){
   //   $( " .arrow-wrapper",this ).css( 'display','none' );
   // });
 
-  for (let i = 1; i <= 5; i++) {
+  for (let i = 1; i <= 14; i++) {
     const element = 5
     console.log(`#sl${i}`)
     $(`#sl${i}`).slick({
