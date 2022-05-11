@@ -137,7 +137,7 @@ header::before {
  /* max-width: 500px; */
  height: 350px;
  object-fit: cover;
- border: 10px solid green;
+ /* border: 10px solid green; */
  
 }
 .your-class {
