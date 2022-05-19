@@ -23,7 +23,7 @@ $(document).ready(function(){
 
   for (let i = 1; i <= 17; i++) {
     const element = 5
-    console.log(`#sl${i}`)
+    // console.log(`#sl${i}`)
     $(`#sl${i}`).slick({
       infinite: true,
       dots: true,
