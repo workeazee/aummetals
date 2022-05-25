@@ -24,6 +24,12 @@ nav{
   top: 0;
 }
 
+.nav-logo img{
+  max-width: 256px;
+  max-height: 36px;
+  margin: 0 10px 0 20px;
+}
+
 header {
   background: url(https://ssl.gstatic.com/atari/images/aristotle-header-dark.jpg);
   /* background-size: 100% 100%; */
@@ -299,6 +305,9 @@ header::before {
     h1 {
       font-size: 1.5rem;
     }
+    .nav-logo a{
+      display: none;
+    }
 }
 
 /* sm */
@@ -326,10 +335,17 @@ header::before {
   h1 {
     font-size: 1.5rem;
   }
+    .nav-logo a {
+      display: none;
+    }
 }
 
 /* xl */
-@media (max-width:1200px) {}
+@media (max-width:1200px) {
+  .nav-logo a {
+      display: none;
+    }
+}
 
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 100px;
