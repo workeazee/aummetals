@@ -147,10 +147,10 @@ header::before {
 .navbar-fixed-top.scrolled {
   background-color: #fff !important;
   transition: background-color 200ms linear;
+  border-bottom: 1px solid rgba(204, 204, 204, 1);
 }
 .navbar-fixed-top.scrolled .navbar-brand {
   color: var(--accent-red);
-
 }
 
 .slick-track img{
