@@ -105,6 +105,13 @@ header::before {
   text-decoration: underline;
   font-size: 1.5rem;
   font-weight: 700;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+.home-slider__title:hover{
+  color: var(--accent-red)
 }
 .home-slider__title-about {
   color: var(--accent-red);
