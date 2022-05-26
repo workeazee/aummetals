@@ -379,7 +379,6 @@ span.navbar-toggler-icon.collapsed{
     top: 0;
     left: 0;
     width: 60%;
-    border: 5px solid red;
     padding: 2em;
     padding-top: 3em;
   }
