@@ -3,7 +3,7 @@
     // the DOM will be available here
 
 $(document).ready(function(){
-$('#hamburger').on('click',function() {
+$('.navbar-toggler').on('click',function() {
   $('.cross').toggleClass('d-none slit-in-horizontal')
   $('.patties ').toggleClass('d-none slit-in-horizontal')
 })
