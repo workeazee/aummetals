@@ -7,7 +7,8 @@
   --accent-red: #ef4b3f;
   --main-bg-color: white;
   --paragraph: #212121;
-  --main-text: var(--accent-white)
+  --main-text: var(--accent-white);
+  font-size:14px
 }
 
 html,
@@ -26,9 +27,10 @@ nav {
 }
 
 .nav-logo img {
-  max-width: 256px;
-  max-height: 56px;
+  height: 56px;
+  width: 45px;
   margin: 0 10px 0 20px;
+  padding: 10px;
 }
 
 header {
@@ -160,6 +162,7 @@ header::before {
   position: fixed;
   z-index: 10;
   width: 100%;
+  padding-top: 0;
 }
 
 .navbar-fixed-top.scrolled {
@@ -285,6 +288,7 @@ header::before {
   text-overflow: ellipsis;
   width: min-content;
   max-width: 50%;
+  padding-top: 0;
 }
 
 #navbarTogglerDemo03 a.nav-text-color {
