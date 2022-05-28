@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Aum Metals &amp; Techno-Ceramics Pvt. Ltd.</title>
-    <link rel="icon" type="image/png" href="./images/fav.png">
-    <link rel="shortcut icon" href="./images/fav.png" type="image/png">
-    
+    <link rel="icon" type="image/png" href="./images/fav.png" />
+    <link rel="shortcut icon" href="./images/fav.png" type="image/png" />
+
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/9.8.1/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.8.1/firebase-auth-compat.js"></script>
+    <!-- <script defer src="/__/firebase/9.8.1/firebase-auth-compat.js"></script>
     <script defer src="/__/firebase/9.8.1/firebase-database-compat.js"></script>
     <script defer src="/__/firebase/9.8.1/firebase-firestore-compat.js"></script>
     <script defer src="/__/firebase/9.8.1/firebase-functions-compat.js"></script>
     <script defer src="/__/firebase/9.8.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.8.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.8.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.8.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.8.1/firebase-performance-compat.js"></script>
+    <script defer src="/__/firebase/9.8.1/firebase-storage-compat.js"></script> -->
+    <script
+      defer
+      src="/__/firebase/9.8.1/firebase-analytics-compat.js"
+    ></script>
+    <!-- <script defer src="/__/firebase/9.8.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.8.1/firebase-performance-compat.js"></script> -->
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -26,34 +29,98 @@
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
     <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      body {
+        background: #eceff1;
+        color: rgba(0, 0, 0, 0.87);
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #message {
+        background: white;
+        max-width: 360px;
+        margin: 100px auto 16px;
+        padding: 32px 24px;
+        border-radius: 3px;
+      }
+      #message h2 {
+        color: #ffa100;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
+      #message h1 {
+        font-size: 22px;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.6);
+        margin: 0 0 16px;
+      }
+      #message p {
+        line-height: 140%;
+        margin: 16px 0 24px;
+        font-size: 14px;
+      }
+      #message a {
+        display: block;
+        text-align: center;
+        background: #039be5;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        padding: 16px;
+        border-radius: 4px;
+      }
+      #message,
+      #message a {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+      #load {
+        color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        font-size: 13px;
+      }
       @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body,
+        #message {
+          margin-top: 0;
+          background: white;
+          box-shadow: none;
+        }
         /* body { border-top: 16px solid #ffa100; } */
       }
     </style>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body onload="splashLoader()">
-   <div id="loading" ><img  width="200px" height="auto" src="images/aum_logo.png" src="aum logo"></div>
+    <div id="loading">
+      <img
+        width="200px"
+        height="auto"
+        src="images/aum_logo.png"
+        src="aum logo"
+      />
+    </div>
 
     <script>
-
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
+      document.addEventListener("DOMContentLoaded", function () {
+        const loadEl = document.querySelector("#load");
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
         // // The Firebase SDK is initialized and available here!
         //
@@ -64,7 +131,7 @@
         // firebase.messaging().requestPermission().then(() => { });
         // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
         firebase.analytics(); // call to activate
-        firebase.analytics().logEvent('tutorial_completed');
+        firebase.analytics().logEvent("tutorial_completed");
         // firebase.performance(); // call to activate
         //
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
@@ -72,199 +139,416 @@
         try {
           let app = firebase.app();
           let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
+            "auth",
+            "database",
+            "firestore",
+            "functions",
+            "messaging",
+            "storage",
+            "analytics",
+            "remoteConfig",
+            "performance",
+          ].filter((feature) => typeof app[feature] === "function");
           // loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
         } catch (e) {
           console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+          loadEl.textContent =
+            "Error loading the Firebase SDK, check the console.";
         }
       });
     </script>
     <header>
-        <div class="container-fluid p-0 ">
-            <nav class="aumetal-nav navbar navbar-expand-lg navbar-light navbar-fixed-top ">
-                <div class="container-fluid nav-items p-0  px-3">
-                  <button id="hamburger" class="navbar-toggler  rounded-0 p-2 border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon d-sm-block d-xs-block d-xl-none d-xxl-none d-md-block d-lg-none">
-                      <svg class=" patties" viewBox="0 0 24 24" stroke="currentColor" jsname="B1n9ub" focusable="false"><g transform="translate(12,12)"><path class="hlJH0" d="M-9 -5 L9 -5" fill="none" stroke-width="2"></path><path class="HBu6N" d="M-9 0 L9 0" fill="none" stroke-width="2"></path><path class="cLAGQe" d="M-9 5 L9 5" fill="none" stroke-width="2"></path></g></svg>
-                      <svg class="d-none cross" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 64 64"><line x1="9.37" x2="54.63" y1="9.37" y2="54.63" fill="none" stroke="#ef4b3f" stroke-miterlimit="10" stroke-width="4"/><line x1="9.37" x2="54.63" y1="54.63" y2="9.37" fill="none" stroke="#ef4b3f" stroke-miterlimit="10" stroke-width="4"/></svg>
-                    </span>
-                    <!-- <svg class="wFCWne" viewBox="0 0 24 24" stroke="#fff" jsname="B1n9ub" focusable="false"><g transform="translate(12,12)"><path class="hlJH0" d="M-9 -5 L9 -5" fill="none" stroke-width="2"></path><path class="HBu6N" d="M-9 0 L9 0" fill="none" stroke-width="2"></path><path class="cLAGQe" d="M-9 5 L9 5" fill="none" stroke-width="2"></path></g></svg> -->
-                  </button>
-                  <div class='nav-logo'>
-                    <a href="/" style="text-decoration:none;"><img width="30px" height="56px" src="images/aum_logo.png" src="aum logo"> </a>
-                    <a class="navbar-brand" href="/">Aum Metals & Techno-Ceramics Pvt. Ltd.</a>
-                  </div>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class=" mynav navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link  aumetal-nav-item nav-text-color active" aria-current="page" href="/">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link aumetal-nav-item nav-text-color" href="about.html">About Us</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link aumetal-nav-item nav-text-color " href="metal-scraps.html">Metal Scraps</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link aumetal-nav-item nav-text-color " href="breaker-cores.html">Breaker Cores</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link aumetal-nav-item nav-text-color" href="industrial-ceramics.html">Industrial Ceramics</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link aumetal-nav-item  nav-text-color" href="contact-us.html">Contact Us</a>
-                      </li>
-                      <!-- <li class="nav-item">
+      <div class="container-fluid p-0">
+        <nav
+          class="aumetal-nav navbar navbar-expand-lg navbar-light navbar-fixed-top"
+        >
+          <div class="container-fluid nav-items p-0 px-3">
+            <button
+              id="hamburger"
+              class="navbar-toggler rounded-0 p-2 border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span
+                class="navbar-toggler-icon d-sm-block d-xs-block d-xl-none d-xxl-none d-md-block d-lg-none"
+              >
+                <svg
+                  class="patties"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  jsname="B1n9ub"
+                  focusable="false"
+                >
+                  <g transform="translate(12,12)">
+                    <path
+                      class="hlJH0"
+                      d="M-9 -5 L9 -5"
+                      fill="none"
+                      stroke-width="2"
+                    ></path>
+                    <path
+                      class="HBu6N"
+                      d="M-9 0 L9 0"
+                      fill="none"
+                      stroke-width="2"
+                    ></path>
+                    <path
+                      class="cLAGQe"
+                      d="M-9 5 L9 5"
+                      fill="none"
+                      stroke-width="2"
+                    ></path>
+                  </g>
+                </svg>
+                <svg
+                  class="d-none cross"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-name="Layer 1"
+                  viewBox="0 0 64 64"
+                >
+                  <line
+                    x1="9.37"
+                    x2="54.63"
+                    y1="9.37"
+                    y2="54.63"
+                    fill="none"
+                    stroke="#ef4b3f"
+                    stroke-miterlimit="10"
+                    stroke-width="4"
+                  />
+                  <line
+                    x1="9.37"
+                    x2="54.63"
+                    y1="54.63"
+                    y2="9.37"
+                    fill="none"
+                    stroke="#ef4b3f"
+                    stroke-miterlimit="10"
+                    stroke-width="4"
+                  />
+                </svg>
+              </span>
+              <!-- <svg class="wFCWne" viewBox="0 0 24 24" stroke="#fff" jsname="B1n9ub" focusable="false"><g transform="translate(12,12)"><path class="hlJH0" d="M-9 -5 L9 -5" fill="none" stroke-width="2"></path><path class="HBu6N" d="M-9 0 L9 0" fill="none" stroke-width="2"></path><path class="cLAGQe" d="M-9 5 L9 5" fill="none" stroke-width="2"></path></g></svg> -->
+            </button>
+            <div class="nav-logo">
+              <a href="/" style="text-decoration: none"
+                ><img
+                  width="30px"
+                  height="56px"
+                  src="images/aum_logo.png"
+                  src="aum logo"
+                />
+              </a>
+              <a class="navbar-brand" href="/"
+                >Aum Metals & Techno-Ceramics Pvt. Ltd.</a
+              >
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="mynav navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link aumetal-nav-item nav-text-color active"
+                    aria-current="page"
+                    href="/"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link aumetal-nav-item nav-text-color"
+                    href="about-us.html"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link aumetal-nav-item nav-text-color"
+                    href="metal-scraps.html"
+                    >Metal Scraps</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link aumetal-nav-item nav-text-color"
+                    href="breaker-cores.html"
+                    >Breaker Cores</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link aumetal-nav-item nav-text-color"
+                    href="industrial-ceramics.html"
+                    >Industrial Ceramics</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link aumetal-nav-item nav-text-color"
+                    href="contact-us.html"
+                    >Contact Us</a
+                  >
+                </li>
+                <!-- <li class="nav-item">
                         <a class="nav-link disabled aumetal-nav-item" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                       </li> -->
-                    </ul>
-                    <!-- <form class="d-flex">
+              </ul>
+              <!-- <form class="d-flex">
                       <button class="btn bg-light" type="submit">Search</button>
                     </form> -->
-                  </div>
-                </div>
-              </nav>
-            <div class="container p-0">
-                <div class="row home-header p-0">
-                    <div class="col-12 align-self-center p-0">
-                        <h1>
-                            Aum Metals & Techno Ceramics Pvt. Ltd.
-                            <hr class="underline">
-                        </h1>
-                    </div>
-                    <!-- <span class="down-caret">
+            </div>
+          </div>
+        </nav>
+        <div class="container p-0">
+          <div class="row home-header p-0">
+            <div class="col-12 align-self-center p-0">
+              <h1>
+                Aum Metals & Techno-Ceramics Pvt. Ltd.
+                <hr class="underline" />
+              </h1>
+            </div>
+            <!-- <span class="down-caret">
                         <svg viewBox="0 0 24 24" width="50px" height="50px" focusable="false">
                             <path fill="rgba(255,255,255,1)" d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
                             <path d="M0-.75h24v24H0z" fill="none"></path>
                         </svg>
                     </span> -->
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <div class="container px-5-md">
-            <div class="row px-0">
-                <div class="col-md-6 mt-4">
-                    <div class="home-slider__wrapper">
-                        <div class="carousel-wrapper">
-                            <div id="sl2" class="carousel your-class"> 
-                        
-                              <img class="carousel__photo initial" src="images/Aum Website Photos/Air Injection Tube.jpeg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Cooler Plates 1.jpeg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Cooler Plates 2.jpeg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Duplex Steel.jpg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Grate Plates.jpeg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Manganese Scrap 1.jpeg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Manganese Scrap 2.jpeg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Radiant Tube.jpg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Reformer Tubes.jpeg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/SS 310 Scrap.jpeg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/SS Scrap.jpg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/High Chrome 1.jpeg">
-                        
-                            </div>
-                          </div>
-                        <img src="https://lh5.googleusercontent.com/hAQg4j1dnFBYoiliAdsqdYJwwUHhHzm_3SUqVAHAM6wfLnRKmEj1qFS83OFkWd_g20d9luRlniDHtzHQOMJjzyM=w16383"
-                            alt="" class="home-slider__img">
-                        <a href='metal-scraps.html' class="home-slider__title text-center p-3">Metal Scraps</a>
-                        <p class="home-slider__txt text-center p-3">We import/export Inconel, Tungsten, Carbide, and
-                            Cobalt Alloy Scraps, Nickel, Chrome, Molybdenum, Stainless Steel & Pure metals. </p>
-                    </div>
+      <div class="container px-5-md">
+        <div class="row px-0">
+          <div class="col-md-6 mt-4">
+            <div class="home-slider__wrapper">
+              <div class="carousel-wrapper">
+                <div id="sl2" class="carousel your-class">
+                  <img
+                    class="carousel__photo initial"
+                    src="images/Aum Website Photos/Air Injection Tube.jpeg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Cooler Plates 1.jpeg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Cooler Plates 2.jpeg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Duplex Steel.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Grate Plates.jpeg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Manganese Scrap 1.jpeg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Manganese Scrap 2.jpeg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Radiant Tube.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Reformer Tubes.jpeg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/SS 310 Scrap.jpeg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/SS Scrap.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/High Chrome 1.jpeg"
+                  />
                 </div>
-                <div class="col-md-6 mt-4">
-                    <div class="home-slider__wrapper">
-                        <!-- slider -->
-                        <div class="carousel-wrapper">
-                            <div id="sl1" class="carousel your-class"> 
-                        
-                              <img class="carousel__photo" src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_150508.jpg">
-                              <img class="carousel__photo"
-                                src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_145126.jpg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_150834.jpg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_151258.jpg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_151633.jpg">
-                            </div>
-                          </div>
-                        <a href="breaker-cores.html" class="home-slider__title text-center p-3">Breaker Cores </a>
-                        <p class="home-slider__txt text-center p-3">Ceramic Breaker cores are a cost-effective alternative to sand cores. They allow you to <b>KNOCK OFF</b> the risers without the need for expensive cutting and labor costs  </p>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-4">
-                    <div class="home-slider__wrapper">
-                        <div class="carousel-wrapper">
-                            <div id="sl3" class="carousel your-class"> 
-                              <img class="carousel__photo" src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_150416.jpg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_145408.jpg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_145956.jpg">
-                              <img class="carousel__photo" src="images/home-ceramic.jpg">
-                              <img class="carousel__photo" src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_150356.jpg">
-                              <img class="carousel__photo"
-                                src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_145950.jpg">
-
-                        
-                            </div>
-                          </div>
-                        <a href="industrial-ceramics.html" class="home-slider__title text-center p-3">Ceramic Tubes and Inserts </a>
-                        <p class="home-slider__txt text-center p-3">Used for various applications in the Industry wherever High Temperatures are seen</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-4">
-                    <div class="home-slider__wrapper">
-                        <div class="carousel-wrapper">
-                            <div id="sl4" class="carousel your-class"> 
-                              <img class="carousel__photo"
-                                src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200211_152800.jpg">
-                                <img class="carousel__photo"
-                                  src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200211_152809.jpg">
-                                  <img class="carousel__photo"
-                                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200211_152611.jpg">
-                        
-                            </div>
-                          </div>
-                        <a href="industrial-ceramics.html" class="home-slider__title text-center p-3">Ceramic Pouring Cups </a>
-                        <p class="home-slider__txt text-center p-3">These are used in the casting Industry for pouring molten metal. We are supplying these to various Investment Casting Plants.  </p>
-                    </div>
-                </div>
-                <div class="col-md-12 mt-4">
-                    <div class="home-slider__wrapper">
-                        <div class="carousel-wrapper">
-                            <div id="sl5" class="carousel your-class"> 
-                              <img class="carousel__photo"
-                                src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG-20191130-WA0017.jpg">
-                              <img class="carousel__photo"
-                                src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200220_154943.jpg">
-                              <img class="carousel__photo"
-                                src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG-20191130-WA0014.jpg">
-                              <img class="carousel__photo"
-                                src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/Grooved Brick1.jpg">
-                              <img class="carousel__photo"
-                                src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG-20191130-WA0017.jpg">
-                        
-                            </div>
-                          </div>
-                        <a href="industrial-ceramics.html" class="home-slider__title text-center p-3">Ceramic Bricks </a>
-                        <p class="home-slider__txt text-center p-3">Grooved bricks are used in the manufacture and lining of electric furnaces and can withstand high temperatures. </p>
-                    </div>
-                </div>
+              </div>
+              <img
+                src="https://lh5.googleusercontent.com/hAQg4j1dnFBYoiliAdsqdYJwwUHhHzm_3SUqVAHAM6wfLnRKmEj1qFS83OFkWd_g20d9luRlniDHtzHQOMJjzyM=w16383"
+                alt=""
+                class="home-slider__img"
+              />
+              <a
+                href="metal-scraps.html"
+                class="home-slider__title text-center p-3"
+                >Metal Scraps</a
+              >
+              <p class="home-slider__txt text-center p-3">
+                We import/export Inconel, Tungsten, Carbide, and Cobalt Alloy
+                Scraps, Nickel, Chrome, Molybdenum, Stainless Steel & Pure
+                metals.
+              </p>
             </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="home-slider__wrapper">
+              <!-- slider -->
+              <div class="carousel-wrapper">
+                <div id="sl1" class="carousel your-class">
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_150508.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_145126.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_150834.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_151258.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_151633.jpg"
+                  />
+                </div>
+              </div>
+              <a
+                href="breaker-cores.html"
+                class="home-slider__title text-center p-3"
+                >Breaker Cores
+              </a>
+              <p class="home-slider__txt text-center p-3">
+                Ceramic Breaker cores are a cost-effective alternative to sand
+                cores. They allow you to <b>KNOCK OFF</b> the risers without the
+                need for expensive cutting and labor costs
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="home-slider__wrapper">
+              <div class="carousel-wrapper">
+                <div id="sl3" class="carousel your-class">
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_150416.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_145408.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_145956.jpg"
+                  />
+                  <img class="carousel__photo" src="images/home-ceramic.jpg" />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_150356.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200210_145950.jpg"
+                  />
+                </div>
+              </div>
+              <a
+                href="industrial-ceramics.html"
+                class="home-slider__title text-center p-3"
+                >Ceramic Tubes and Inserts
+              </a>
+              <p class="home-slider__txt text-center p-3">
+                Used for various applications in the Industry wherever High
+                Temperatures are seen
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4">
+            <div class="home-slider__wrapper">
+              <div class="carousel-wrapper">
+                <div id="sl4" class="carousel your-class">
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200211_152800.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200211_152809.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200211_152611.jpg"
+                  />
+                </div>
+              </div>
+              <a
+                href="industrial-ceramics.html"
+                class="home-slider__title text-center p-3"
+                >Ceramic Pouring Cups
+              </a>
+              <p class="home-slider__txt text-center p-3">
+                These are used in the casting Industry for pouring molten metal.
+                We are supplying these to various Investment Casting Plants.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 mt-4">
+            <div class="home-slider__wrapper">
+              <div class="carousel-wrapper">
+                <div id="sl5" class="carousel your-class">
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG-20191130-WA0017.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG_20200220_154943.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG-20191130-WA0014.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/Grooved Brick1.jpg"
+                  />
+                  <img
+                    class="carousel__photo"
+                    src="images/Aum Website Photos/Ceramics and Breaker Core/Portfolio Images/IMG-20191130-WA0017.jpg"
+                  />
+                </div>
+              </div>
+              <a
+                href="industrial-ceramics.html"
+                class="home-slider__title text-center p-3"
+                >Ceramic Bricks
+              </a>
+              <p class="home-slider__txt text-center p-3">
+                Grooved bricks are used in the manufacture and lining of
+                electric furnaces and can withstand high temperatures.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="./js/index.js"></script>
-</body>
-
+  </body>
 </html>
