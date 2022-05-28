@@ -1,11 +1,24 @@
 function splashLoader() {
-  let b = document.getElementById('loading');
-  b.style.display = "none";
+  // let b = document.getElementById('loading');
+  // b.style.display = "none";
   // alert('laoded')
 }
 (function() {
     // your page initialization code here
     // the DOM will be available here
+    let b = document.getElementById('loading');
+    if(window.location.pathname==='/'){
+      b.style.animation = "puff-out-center 4000ms ease-out both";
+      setTimeout(function() {
+        $(b).css('display', 'none');
+    }, 4000);
+    }
+    else {
+      b.style.animation = "puff-out-center 2000ms ease-out both";
+      setTimeout(function() {
+        $(b).css('display', 'none');
+    }, 2000);
+    }
 
 $(document).ready(function(){
 $('.navbar-toggler').on('click',function() {

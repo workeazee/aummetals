@@ -556,43 +556,20 @@ span.navbar-toggler-icon.collapsed {
     transform: translateZ(0) rotateX(0)
   }
 }
-@-webkit-keyframes puff-out-center {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    /* -webkit-filter: blur(0px);
-            filter: blur(0px); */
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    /* -webkit-filter: blur(4px);
-            filter: blur(4px); */
-    opacity: 0;
-  }
-}
 @keyframes puff-out-center {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    /* -webkit-filter: blur(0px);
-            filter: blur(0px); */
+    transform: scale(1);
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    /* -webkit-filter: blur(4px);
-            filter: blur(4px); */
+    transform: scale(2);
     opacity: 0;
   }
 }
 
-.puff-out-center {
-	-webkit-animation: puff-out-center 4s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
-	        animation: puff-out-center 4s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
-}
+/* .puff-out-center {
+	animation: puff-out-center 4000ms ease-out both;
+} */
 .slit-in-horizontal {
   animation: slit-in-horizontal .45s ease-out both
 }
