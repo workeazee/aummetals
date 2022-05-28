@@ -401,7 +401,17 @@ span.navbar-toggler-icon.collapsed {
 .contact-icons img{
   margin-right: 10px;
 }
-
+#loading  {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    /* margin: 0 auto; */
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* xs */
 @media (max-width:0) {
@@ -540,7 +550,43 @@ span.navbar-toggler-icon.collapsed {
     transform: translateZ(0) rotateX(0)
   }
 }
+@-webkit-keyframes puff-out-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+}
+@keyframes puff-out-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+}
 
+.puff-out-center {
+	-webkit-animation: puff-out-center 4s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+	        animation: puff-out-center 4s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+}
 .slit-in-horizontal {
   animation: slit-in-horizontal .45s ease-out both
 }
