@@ -1,3 +1,8 @@
+function splashLoader() {
+  let b = document.getElementById('loading');
+  b.style.display = "none";
+  // alert('laoded')
+}
 (function() {
     // your page initialization code here
     // the DOM will be available here
