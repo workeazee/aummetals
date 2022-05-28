@@ -9,7 +9,6 @@ function splashLoader() {
     let b = document.getElementById('loading');
     if(window.location.pathname==='/'){
       b.style.animation = "puff-out-center 4000ms ease-out both";
-      b.style.display = none;
       setTimeout(function() {
         $(b).css('display', 'none');
     }, 4000);
