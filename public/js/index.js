@@ -8,13 +8,13 @@ import './bootstrap.bundle.min.js'
     if(window.location.pathname==='/public/' || window.location.pathname==='/'){
       $('.splashLogo').addClass('puff-out-center-long')
       setTimeout(function() {
-        $('#loading').css('display', 'none');
+        $('#loading').hide();
     }, 3000);
     }
     else {
       $('.splashLogo').addClass('puff-out-center-short')
       setTimeout(function() {
-        $('#loading').css('display', 'none');
+        $('#loading').hide();
     }, 2000);
     }
 
@@ -31,13 +31,10 @@ $('.navbar-toggler').on('click',function() {
       prevArrow:"<button type='button' class='slick-prev pull-left'><div class='arrow-wrapper'><div class='icon-left'><svg viewBox='0 0 24 24' width='30px' height='30px' focusable='false'><path fill='rgba(255,255,255,1)' d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'></path><path d='M0-.75h24v24H0z' fill='none'></path></svg></div></div></button>",
       nextArrow:"<button type='button' class='slick-next pull-right'><div class='arrow-wrapper'><div class='icon-right'><svg viewBox='0 0 24 24' width='30px' height='30px' focusable='false'><path fill='rgba(255,255,255,1)' d='M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z'></path><path d='M0-.75h24v24H0z' fill='none'></path></svg></div></div></button>"
     });
-    console.log('test');
     $( "#sl"+i ).mouseover(function() {
-      console.log('ds')
       $( " .arrow-wrapper",this ).css( 'display','flex' );
     });
     $( "#sl"+i ).mouseleave(function() {
-      console.log('ds')
       $( " .arrow-wrapper",this ).css( 'display','none' );
     });
   }

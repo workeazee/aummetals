@@ -1,14 +1,12 @@
 @import url("bootstrap.min.css");
 @import url("slick.css");
-@import url("http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap");
 
 :root {
-  --accent-white: white;
+  --accent-white: #ffffff;
   --accent-red: #ef4b3f;
   --main-bg-color: white;
-  --paragraph: #212121;
+  --paragraph: #000000;
   --main-text: var(--accent-white);
   --scale-rate: 15;
   font-size: 14px;
@@ -23,7 +21,6 @@ body {
 
 body {
   background: var(--main-bg-color);
-  font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -43,7 +40,7 @@ nav {
 }
 
 header {
-  background: url(https://ssl.gstatic.com/atari/images/aristotle-header-dark.jpg);
+  background: url("../images/aristotle-header-dark.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -54,9 +51,7 @@ header h1 {
   font-size: 3.75rem;
   font-family: "Lora", sans-serif;
   letter-spacing: -0.5px;
-  /* font-weight: 550; */
   text-size-adjust: 100%;
-  /* line-height: 75.6px */
 }
 
 h1 .underline {
@@ -75,17 +70,15 @@ p {
   text-align: justify;
 }
 hr:not(.underline) {
-  margin: 2em 0!important;
+  margin: 2em 0 !important;
 }
 .home-header {
-  /* border: 1px solid red; */
   height: 100vh;
   padding: 8px;
   position: relative;
 }
 
 .other-header {
-  /* border: 1px solid red; */
   height: 300px;
   padding: 8px;
   position: relative;
@@ -149,12 +142,12 @@ hr:not(.underline) {
 }
 .home-slider__txt {
   color: var(--paragraph);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", sans-serif;
 }
 
 .home-slider__txt-about {
   color: var(--paragraph);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", sans-serif;
   margin-top: 10px;
   padding-left: 0;
 }
@@ -190,22 +183,20 @@ hr:not(.underline) {
 .navbar-fixed-top.scrolled {
   background-color: #fff !important;
   transition: background-color 200ms linear;
-  border-bottom: 1px solid rgba(204, 204, 204, 1);
+  border-bottom: 1px solid var(--accent-red);
 }
 
-/* .navbar-fixed-top.scrolled .nav-logo  */
-
-.navbar-fixed-top.scrolled .navbar-brand  {
+.navbar-fixed-top.scrolled .navbar-brand {
   color: var(--accent-red);
   font-size: medium;
   transition: font-size 0.3s linear;
 }
 
-.nav-logo a img{
+.nav-logo a img {
   transition: all 0.3s ease;
 }
 
-.navbar-fixed-top.scrolled .nav-logo a img{
+.navbar-fixed-top.scrolled .nav-logo a img {
   width: 40px;
   height: 50px;
   transition: all 0.3s ease;
@@ -213,10 +204,8 @@ hr:not(.underline) {
 
 .slick-track img {
   width: auto;
-  /* max-width: 500px; */
   height: 350px;
   object-fit: cover;
-  /* border: 10px solid green; */
 }
 
 .your-class {
@@ -226,7 +215,6 @@ hr:not(.underline) {
 #sl1 .slick-prev,
 .pull-left {
   position: absolute;
-  /* border: 1px solid red; */
   left: 0;
   z-index: 1;
   top: 40%;
@@ -259,32 +247,22 @@ hr:not(.underline) {
   line-height: 10px;
   text-align: center;
   display: inline-block;
-  /* margin: 0 auto; */
 }
 
 .slick-dots > li.slick-active::marker {
   color: var(--accent-red);
-  /* height: 50px; */
-  /* font-size: 50px;
-  line-height: 20px; */
 }
 
 #sl1 .slick-next,
 .pull-right {
   position: absolute;
-  /* border: 1px solid blue; */
   right: 0;
   z-index: 2;
   top: 40%;
   transform: translateY(-40%);
 }
 
-.slick-next .pull-right {
-}
-
 /* slider start */
-/* Parent wrapper to carousel. Width can be changed as needed. */
-/*  */
 .carousel__photo {
   width: 100px;
   height: 200px;
@@ -294,12 +272,8 @@ hr:not(.underline) {
   width: 100%;
   height: 250px;
   max-height: 250px;
-  /* margin: 10px auto; */
 }
 
-/* .ham{
-  background-color: rgba(0, 0, 0, .2);
-} */
 .navbar-toggler {
   all: unset !important;
 }
@@ -309,12 +283,9 @@ hr:not(.underline) {
   all: unset !important;
 }
 
-/* :not(#navbarTooglerDemo03.scrolled) a {
-  color: #fff!important
-} */
 .aumetal-nav .navbar-brand {
   color: #fff;
-  font-family: "Open Sans";
+  font-family: "Lora";
   font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -326,7 +297,6 @@ hr:not(.underline) {
 
 #navbarTogglerDemo03 a.nav-text-color {
   color: #fff;
-  font-family: "Open Sans";
   padding: 0;
   margin: 7px;
   font-size: larger;
@@ -334,33 +304,22 @@ hr:not(.underline) {
 }
 
 #navbarTogglerDemo03 a.nav-text-color.active {
-  font-family: "Open Sans";
+  color: var(--accent-red);
   font-weight: 800;
+  border-bottom: 1px solid var(--accent-red);
 }
 
 .scrolled #navbarTogglerDemo03 a {
   color: #000;
-  font-family: "Open Sans";
   font-size: medium;
   transition: font-size 1s;
 }
 
 .scrolled #navbarTogglerDemo03 a.active {
-  font-family: "Open Sans";
+  font-family: "Lora";
   font-weight: 800;
 }
 
-/* .nav-link.test {
-
-} */
-
-/* .ham>svg {
-  height: 25px;
-  width: 25px;
-  padding: 0;
-  margin: 0;
-
-} */
 .arrow-wrapper {
   height: 50px;
   width: 50px;
@@ -368,25 +327,8 @@ hr:not(.underline) {
   border-radius: 100%;
 }
 
-.arrow-right {
-}
-
-.arrow-left {
-}
-
-/* .slick-prev:before {
-  content: "<";
-  color: red;
-  font-size: 30px;
-}
-
-.your-class.slick-next {
-  all:unset!important;
-  content: ">";
-  color: red;
-  font-size: 30px;
-} */
 /* slider end */
+
 .navbar-light .navbar-toggler-icon {
   background-image: unset;
   position: relative;
@@ -394,7 +336,6 @@ hr:not(.underline) {
 
 span.navbar-toggler-icon {
   margin: 5px;
-  /* background: red; */
   line-height: 1;
   font-size: 15px;
   z-index: 10;
@@ -406,7 +347,6 @@ span.navbar-toggler-icon.collapsed {
 
 .scrolled span.navbar-toggler-icon {
   margin: 5px;
-  /* background: red; */
   line-height: 1;
   font-size: 15px;
   color: var(--accent-red);
@@ -424,7 +364,6 @@ span.navbar-toggler-icon.collapsed {
   height: 100vh;
   width: 100vw;
   background-color: white;
-  /* margin: 0 auto; */
   z-index: 100;
   display: flex;
   align-items: center;
@@ -440,10 +379,9 @@ span.navbar-toggler-icon.collapsed {
   h1 {
     font-size: 1.5rem;
   }
-
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   h1 {
     font-size: 1.5rem;
   }
@@ -461,12 +399,11 @@ span.navbar-toggler-icon.collapsed {
     top: 0;
     left: 0;
     width: 60%;
-    padding: 2em;
-    padding-top: 3em;
+    padding-top: 4em;
+    border-right: 1px solid red;
   }
 
   #navbarTogglerDemo03::after {
-    /* content:'<svg class="wFCWne o0iVae" viewBox="0 0 24 24" stroke="currentColor" jsname="B1n9ub" focusable="false"><g transform="translate(12,12)"><path class="hlJH0" d="M-9 -5 L9 -5" fill="none" stroke-width="2"></path><path class="HBu6N" d="M-9 0 L9 0" fill="none" stroke-width="2"></path><path class="cLAGQe" d="M-9 5 L9 5" fill="none" stroke-width="2"></path></g></svg>'; */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' data-name='Layer 1' viewBox='0 0 64 64'%3E%3Cline x1='9.37' x2='54.63' y1='9.37' y2='54.63' fill='none' stroke='%23010101' stroke-miterlimit='10' stroke-width='4'/%3E%3Cline x1='9.37' x2='54.63' y1='54.63' y2='9.37' fill='none' stroke='%23010101' stroke-miterlimit='10' stroke-width='4'/%3E%3C/svg%3E");
     color: red;
     display: block;
@@ -474,9 +411,11 @@ span.navbar-toggler-icon.collapsed {
   }
 
   #navbarTogglerDemo03 a.nav-text-color {
-    color: #111;
-    font-family: "Open Sans";
+    margin: 0;
+    padding: 1em;
+    color: #000000;
     font-size: medium;
+    border-bottom: 1px solid;
   }
 
   span.navbar-toggler-icon {
@@ -485,33 +424,17 @@ span.navbar-toggler-icon.collapsed {
     font-size: 15px;
     color: var(--accent-red);
   }
-
-  /* #navbarTogglerDemo03 a.nav-text-color.active{
-      font-family: 'Open Sans';
-      font-weight: 800;
-    }
-    .scrolled #navbarTogglerDemo03 a{
-      color: #000;
-      font-family: 'Open Sans';
-    }
-    .scrolled #navbarTogglerDemo03 a.active{
-      font-family: 'Open Sans';
-      font-weight: 800;
-    } */
-
 }
 
 /* sm */
 @media (max-width: 576px) {
   header h1 {
-    /* font-size: 3.125rem; */
     font-size: 2.35rem;
   }
 
   h1 {
     font-size: 1.5rem;
   }
-
 }
 
 /* md */
@@ -540,20 +463,33 @@ span.navbar-toggler-icon.collapsed {
   }
 }
 
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 100px;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-::-webkit-scrollbar-thumb {
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
+/* SCROLL BAR CSS STARTS*/
+/* width */
 ::-webkit-scrollbar {
-  -webkit-border-radius: 100px;
-  background-color: rgba(0, 0, 0, 0);
-  width: 9px;
+  width: 0.9em;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 0.9em;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-red);
+  border: 3px solid transparent;
+  border-radius: 0.9em;
+  background-clip: content-box;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e62e20;
+  border: 3px solid transparent;
+  border-radius: 0.9em;
+  background-clip: content-box;
+}
+/* SCROLL BAR CSS ENDS*/
 
 /* animations */
 @keyframes slit-in-horizontal {
@@ -581,22 +517,12 @@ span.navbar-toggler-icon.collapsed {
     opacity: 1;
   }
 }
-/* @keyframes puff-out-center-xs {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(15);
-    opacity: 1;
-  }
-} */
 
 .puff-out-center-long {
-	animation: puff-out-center 3000ms ease-out both;
+  animation: puff-out-center 3000ms ease-out both;
 }
 .puff-out-center-short {
-	animation: puff-out-center 2000ms ease-out both;
+  animation: puff-out-center 2000ms ease-out both;
 }
 .slit-in-horizontal {
   animation: slit-in-horizontal 0.45s ease-out both;
