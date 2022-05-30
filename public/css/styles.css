@@ -1,3 +1,5 @@
+@import url("bootstrap.min.css");
+@import url("slick.css");
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap");
@@ -8,6 +10,7 @@
   --main-bg-color: white;
   --paragraph: #212121;
   --main-text: var(--accent-white);
+  --scale-rate: 15;
   font-size: 14px;
 }
 * {
@@ -71,8 +74,8 @@ header::before {
 p {
   text-align: justify;
 }
-hr {
-  margin: 2em 0;
+hr:not(.underline) {
+  margin: 2em 0!important;
 }
 .home-header {
   /* border: 1px solid red; */
@@ -416,12 +419,13 @@ span.navbar-toggler-icon.collapsed {
 /* xs */
 @media (max-width: 0) {
   header h1 {
-    font-size: 2.5rem;
+    font-size: 2.35rem;
   }
 
   h1 {
     font-size: 1.5rem;
   }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -432,7 +436,9 @@ span.navbar-toggler-icon.collapsed {
   .nav-logo .navbar-brand {
     display: none;
   }
-
+  :root {
+    --scale-rate: 7;
+  }
   #navbarTogglerDemo03 {
     background-color: #fff;
     height: 100vh;
@@ -477,18 +483,20 @@ span.navbar-toggler-icon.collapsed {
       font-family: 'Open Sans';
       font-weight: 800;
     } */
+
 }
 
 /* sm */
 @media (max-width: 576px) {
   header h1 {
     /* font-size: 3.125rem; */
-    font-size: 2.5rem;
+    font-size: 2.35rem;
   }
 
   h1 {
     font-size: 1.5rem;
   }
+
 }
 
 /* md */
@@ -554,14 +562,27 @@ span.navbar-toggler-icon.collapsed {
     opacity: 1;
   }
   100% {
-    transform: scale(2);
-    opacity: 0;
+    transform: scale(var(--scale-rate));
+    opacity: 1;
   }
 }
-
-/* .puff-out-center {
-	animation: puff-out-center 4000ms ease-out both;
+/* @keyframes puff-out-center-xs {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(15);
+    opacity: 1;
+  }
 } */
+
+.puff-out-center-long {
+	animation: puff-out-center 3000ms ease-out both;
+}
+.puff-out-center-short {
+	animation: puff-out-center 2000ms ease-out both;
+}
 .slit-in-horizontal {
   animation: slit-in-horizontal 0.45s ease-out both;
 }
