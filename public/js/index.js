@@ -5,7 +5,7 @@ import './bootstrap.bundle.min.js'
     // your page initialization code here
     // the DOM will be available here
     let b = document.getElementsByClassName('splashLogo');
-    if(window.location.pathname==='/public/'){
+    if(window.location.pathname==='/public/' || window.location.pathname==='/'){
       $('.splashLogo').addClass('puff-out-center-long')
       setTimeout(function() {
         $('#loading').css('display', 'none');
