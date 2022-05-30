@@ -1,26 +1,23 @@
-function splashLoader() {
-  // let b = document.getElementById('loading');
-  // b.style.display = "none";
-  // alert('laoded')
-}
+import "./jquery.min.js";
+import './slick.min.js';
+import './bootstrap.bundle.min.js'
 (function() {
     // your page initialization code here
     // the DOM will be available here
-    let b = document.getElementById('loading');
-    if(window.location.pathname==='/'){
-      b.style.animation = "puff-out-center 4000ms ease-out both";
+    let b = document.getElementsByClassName('splashLogo');
+    if(window.location.pathname==='/public/'){
+      $('.splashLogo').addClass('puff-out-center-long')
       setTimeout(function() {
-        $(b).css('display', 'none');
-    }, 4000);
+        $('#loading').css('display', 'none');
+    }, 3000);
     }
     else {
-      b.style.animation = "puff-out-center 2000ms ease-out both";
+      $('.splashLogo').addClass('puff-out-center-short')
       setTimeout(function() {
-        $(b).css('display', 'none');
+        $('#loading').css('display', 'none');
     }, 2000);
     }
 
-$(document).ready(function(){
 $('.navbar-toggler').on('click',function() {
   $('.cross').toggleClass('d-none slit-in-horizontal')
   $('.patties ').toggleClass('d-none slit-in-horizontal')
@@ -50,5 +47,4 @@ $('.navbar-toggler').on('click',function() {
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
   });
- })();
  })();
