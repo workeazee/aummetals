@@ -193,8 +193,22 @@ hr:not(.underline) {
   border-bottom: 1px solid rgba(204, 204, 204, 1);
 }
 
-.navbar-fixed-top.scrolled .navbar-brand {
+/* .navbar-fixed-top.scrolled .nav-logo  */
+
+.navbar-fixed-top.scrolled .navbar-brand  {
   color: var(--accent-red);
+  font-size: medium;
+  transition: font-size 0.3s linear;
+}
+
+.nav-logo a img{
+  transition: all 0.3s ease;
+}
+
+.navbar-fixed-top.scrolled .nav-logo a img{
+  width: 40px;
+  height: 50px;
+  transition: all 0.3s ease;
 }
 
 .slick-track img {
@@ -307,6 +321,7 @@ hr:not(.underline) {
   width: min-content;
   max-width: 50%;
   padding-top: 0;
+  transition: font-size 0.3s linear;
 }
 
 #navbarTogglerDemo03 a.nav-text-color {
