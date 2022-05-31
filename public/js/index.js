@@ -5,8 +5,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase
 import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
 // Add Firebase products that you want to use
 // gtag
-import "./analytics";
-// import "https://www.googletagmanager.com/gtag/js?id=G-45WTYWR6PM"
+// import "./analytics";
+import "https://www.googletagmanager.com/gtag/js?id=G-45WTYWR6PM"
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
