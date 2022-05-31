@@ -1,3 +1,8 @@
+// function ignoreerror()
+// {
+//    return true
+// }
+// window.onerror=ignoreerror();
 import "./jquery.min.js";
 import './slick.min.js';
 import './bootstrap.bundle.min.js'
@@ -6,12 +11,7 @@ import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/9.8.2
 // Add Firebase products that you want to use
 // gtag
 // import "./analytics";
-import "https://www.googletagmanager.com/gtag/js?id=G-45WTYWR6PM"
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-45WTYWR6PM');
 (function () {
   // your page initialization code here
   const firebaseConfig = {
@@ -73,3 +73,14 @@ import "https://www.googletagmanager.com/gtag/js?id=G-45WTYWR6PM"
     });
   });
 })();
+// import "https://www.googletagmanager.com/gtag/js?id=G-45WTYWR6PM"
+// try {
+//   window.dataLayer = window.dataLayer || [];
+//   function gtag(){dataLayer.push(arguments);}
+//   gtag('js', new Date());
+
+//   gtag('config', 'G-45WTYWR6PM');
+// } catch (error) {
+  
+// }
+
