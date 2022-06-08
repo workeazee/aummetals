@@ -419,7 +419,7 @@ span.navbar-toggler-icon.collapsed {
     height: 100vh;
     position: absolute;
     top: 0;
-    right: 0;
+    /* right: 0; */
     width: 60%;
     padding-top: 4em;
     border-left: 1px solid red;
@@ -446,6 +446,26 @@ span.navbar-toggler-icon.collapsed {
     font-size: 15px;
     color: var(--accent-red);
   }
+  .navbar-collapse {
+  position: absolute;
+  top: 54px;
+  right: -100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  transition: all 0.4s ease;
+  display: block;
+}
+.navbar-collapse.collapsing {
+  height: 100vh !important;
+  margin-left: 50%;
+  left: 50%;
+  transition: all 0.2s ease;
+}
+.navbar-collapse.show {
+  right: 0;
+} 
 }
 
 /* sm */
