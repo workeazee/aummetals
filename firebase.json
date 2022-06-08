@@ -8,8 +8,28 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "/",
         "destination": "/index.html"
+      },
+      {
+        "source": "/metal-scraps",
+        "destination": "/metal-scraps.html"
+      },
+      {
+        "source": "/breaker-cores",
+        "destination": "/breaker-cores.html"
+      },
+      {
+        "source": "/industrial-ceramics",
+        "destination": "/industrial-ceramics.html"
+      },
+      {
+        "source": "/contact-us",
+        "destination": "/contact-us.html"
+      },
+      {
+        "source": "/about-us",
+        "destination": "/about-us.html"
       }
     ],
     "cleanUrls": true
