@@ -12,7 +12,6 @@
         "destination": "/index.html"
       }
     ],
-    "cleanUrls": true,
-    "trailingSlash": true
+    "cleanUrls": true
   }
 }
