@@ -21,6 +21,8 @@
     <title>Aum Metals &amp; Techno-Ceramics Pvt. Ltd.</title>
     <link rel="icon" type="image/png" href="./images/fav.png" />
     <link rel="shortcut icon" href="./images/fav.png" type="image/png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
 
     <!-- update the version number as needed -->
     <!-- <script defer src="/__/firebase/9.8.1/firebase-app-compat.js"></script> -->
@@ -315,7 +317,7 @@
         </nav>
         <div class="container p-0">
           <div class="row home-header p-0">
-            <div class="col-12 align-self-center p-0">
+            <div class="col-12 align-self-center p-0" data-aos="fade-in">
               <h1>
                 Aum Metals & Techno-Ceramics Pvt. Ltd.
                 <hr class="underline" />
@@ -471,7 +473,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-6 mt-4">
+          <div class="col-md-6 mt-4" data-aos="fade-left" >
             <div class="home-slider__wrapper">
               <div class="carousel-wrapper">
                 <div id="sl4" class="carousel your-class">
@@ -554,5 +556,10 @@
 
       gtag("config", "G-45WTYWR6PM");
     </script>
+    <script src="./js/aos.js"></script>
+
+        <script>
+          AOS.init();
+        </script>
   </body>
 </html>
