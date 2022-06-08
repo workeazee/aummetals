@@ -1,16 +1,8 @@
-// function ignoreerror()
-// {
-//    return true
-// }
-// window.onerror=ignoreerror();
 import "./jquery.min.js";
 import './slick.min.js';
 import './bootstrap.bundle.min.js'
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
 import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
-// Add Firebase products that you want to use
-// gtag
-// import "./analytics";
 
 (function () {
   // your page initialization code here
@@ -29,9 +21,7 @@ import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/9.8.2
   const app = initializeApp(firebaseConfig);
   console.log(app, 'app')
   const analytics = getAnalytics(app);
-  // analytics.logEvent('notification_received');
-  logEvent(analytics, 'notification_received');
-  logEvent(analytics, 'asdasdd_test');
+
   let b = document.getElementsByClassName('splashLogo');
   if (window.location.pathname === '/public/' || window.location.pathname === '/') {
     $('.splashLogo').addClass('puff-out-center-long')
@@ -50,6 +40,10 @@ import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/9.8.2
     $('.cross').toggleClass('d-none slit-in-horizontal')
     $('.patties ').toggleClass('d-none slit-in-horizontal')
   })
+  // header parallax 
+//   $(window).scroll(function(){
+//     $('#back').css({'top':''+(-($(this).scrollTop()*0.05))+'px'});
+// });
   for (let i = 1; i <= 17; i++) {
 
     $(`#sl${i}`).slick({
@@ -73,14 +67,3 @@ import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/9.8.2
     });
   });
 })();
-// import "https://www.googletagmanager.com/gtag/js?id=G-45WTYWR6PM"
-// try {
-//   window.dataLayer = window.dataLayer || [];
-//   function gtag(){dataLayer.push(arguments);}
-//   gtag('js', new Date());
-
-//   gtag('config', 'G-45WTYWR6PM');
-// } catch (error) {
-  
-// }
-
