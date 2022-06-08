@@ -29,8 +29,8 @@ main {
 
 .float {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   bottom: 40px;
   right: 40px;
   background-color: #25d366;
@@ -42,6 +42,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.my-flaot-icon{
+  color: #fff;
 }
 
 
@@ -415,10 +419,10 @@ span.navbar-toggler-icon.collapsed {
     height: 100vh;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 60%;
     padding-top: 4em;
-    border-right: 1px solid red;
+    border-left: 1px solid red;
   }
 
   #navbarTogglerDemo03::after {
@@ -460,6 +464,13 @@ span.navbar-toggler-icon.collapsed {
   h1 {
     font-size: 1.5rem;
   }
+  .nav-items {
+    flex-direction: row-reverse;
+  }
+
+  .nav-items a img{
+    margin: 0;
+  }
 }
 
 /* lg */
@@ -468,7 +479,12 @@ span.navbar-toggler-icon.collapsed {
   h1 {
     font-size: 1.5rem;
   }
-
+  .nav-items {
+    flex-direction: row-reverse;
+  }
+  .nav-items a img {
+    margin: 0;
+  }
   .nav-logo .navbar-brand {
     display: none;
   }
