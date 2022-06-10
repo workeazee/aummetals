@@ -2,7 +2,7 @@ import "./jquery.min.js";
 import './slick.min.js';
 import './bootstrap.bundle.min.js'
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
-import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
 
 (function () {
   // your page initialization code here

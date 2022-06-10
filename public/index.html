@@ -316,7 +316,7 @@
         </nav>
         <div class="container p-0">
           <div class="row home-header p-0" id="back">
-            <div class="col-12 align-self-center p-0 content-rake">
+            <div class="col-12 align-self-center p-0 content-rake" data-aos="zoom-in-up" data-aos-delay="500">
               <h1>
                 Aum Metals & Techno-Ceramics Pvt. Ltd.
                 <hr class="underline" />
@@ -329,7 +329,7 @@
     <main class="content-rake">
       <div class="container px-5-md">
         <div class="row px-0">
-          <div class="col-md-6 mt-4">
+          <div class="col-md-6 mt-4" data-aos="zoom-in">
             <div class="home-slider__wrapper">
               <div class="carousel-wrapper">
                 <div id="sl2" class="carousel your-class">
@@ -395,7 +395,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-6 mt-4">
+          <div class="col-md-6 mt-4" data-aos="zoom-in">
             <div class="home-slider__wrapper">
               <!-- slider -->
               <div class="carousel-wrapper">
@@ -434,7 +434,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-6 mt-4">
+          <div class="col-md-6 mt-4" data-aos="zoom-in">
             <div class="home-slider__wrapper">
               <div class="carousel-wrapper">
                 <div id="sl3" class="carousel your-class">
@@ -472,7 +472,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-6 mt-4" data-aos="fade-left">
+          <div class="col-md-6 mt-4" data-aos="zoom-in">
             <div class="home-slider__wrapper">
               <div class="carousel-wrapper">
                 <div id="sl4" class="carousel your-class">
@@ -501,7 +501,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-12 mt-4">
+          <div class="col-md-12 mt-4" data-aos="zoom-in">
             <div class="home-slider__wrapper">
               <div class="carousel-wrapper">
                 <div id="sl5" class="carousel your-class">
@@ -558,7 +558,26 @@
     <script src="./js/aos.js"></script>
 
     <script>
-      AOS.init();
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of data-aos as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by data-aos-* attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
     </script>
   </body>
 </html>
