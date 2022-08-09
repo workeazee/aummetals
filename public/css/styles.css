@@ -345,6 +345,7 @@ hr:not(.underline) {
   color: var(--accent-red);
   font-weight: 800;
   border-bottom: 1px solid var(--accent-red);
+  background: transparent;
 }
 
 .scrolled #navbarTogglerDemo03 a {

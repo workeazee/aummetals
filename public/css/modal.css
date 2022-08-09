@@ -28,8 +28,8 @@
 }
 
 .close {
-    color: #aaaaaa;
-    font-size: 30px;
+    color: #222;
+    font-size: 40px;
     font-weight: bold;
     position: absolute;
     top: 0;
@@ -55,7 +55,7 @@
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: 10px auto;
+    margin: 10px auto;min-height: 220px;
 }
 
 .prev,
@@ -143,11 +143,39 @@
 
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
 
     .prev,
     .next,
     .text {
         font-size: 11px
     }
+        .text {
+            justify-content: center;
+        }
+        .text_details {
+            width: 85%;
+        }
+        .text_title {
+            font-size: 3.5vw;
+            margin-bottom: 0.521vw;
+            line-height: 1.1;
+        }
+    
+        .text_date {
+            color: #ef4b3f;
+            font-size: 3.5vw;
+        }
+    
+        .text_para,
+        .text_loc,
+        .text_stall {
+            font-size: 3vw;
+            color: #454545;
+        }
+    
+        .text_stall {
+            font-weight: bold;
+            font-size: 3.263vw;
+        }
 }
