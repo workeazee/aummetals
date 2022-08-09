@@ -27,18 +27,26 @@ main {
   margin-bottom: 4em;
 }
 
-.float {
+.float_icons{
   position: fixed;
-  width: 55px;
-  height: 55px;
   bottom: 40px;
-  right: 40px;
+    right: 40px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.float, .info_btn {
+  width: 35px;
+  height: 35px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
-  z-index: 100;
+  margin: 2px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,8 +54,16 @@ main {
 
 .my-flaot-icon{
   color: #fff;
+  margin: 0 auto;
 }
 
+.info_btn{
+  background-color: #ef4b3f;
+  color: #fff;
+  font-style: italic;
+  font-size: medium;
+  border: 1px solid transparent;
+}
 
 nav {
   position: fixed;

@@ -24,6 +24,7 @@
     <link rel="shortcut icon" href="./images/fav.png" type="image/png" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
   </head>
 
   <body>
@@ -49,14 +50,77 @@
 
     <!-- Splash Section  -->
 
-    <a href="https://wa.me/+917021250370" class="float" target="_blank">
-      <img
-        class="my-float-icon"
-        width="25px"
-        src="images//Aum Website Photos/Logo/float-whatsapp.svg"
-        alt="phone svg"
-      />
-    </a>
+    <div class="float_icons">
+      <button class="info_btn" id="myBtn">i</button>
+      <a href="https://wa.me/+917021250370" class="float" target="_blank">
+        <img
+          class="my-float-icon"
+          width="25px"
+          src="images//Aum Website Photos/Logo/float-whatsapp.svg"
+          alt="phone svg"
+        />
+      </a>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="myModal" style="display: none">
+      <div class="myModal-content">
+        <span class="close">&times;</span>
+        <h1 class="myModal-header">VISIT US ON OUR UPCOMING EXHIBITION</h1>
+        <hr />
+        <div class="myModal-desc">
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <div class="text">
+                <div class="text_img">
+                  <img src="" alt="image" width="40%" />
+                </div>
+                <div class="text_details">
+                  <h4 class="text_title">
+                    INTER FOUNDRY - INTER DIE CAST, Coimbatore
+                  </h4>
+                  <p class="text_date">15 SEP 2022 - 17 SEP 2022</p>
+                  <p class="text_para">
+                    INTER FOUNDRY - INTER DIE-CAST will be held from 15-17 Sep
+                    2022
+                  </p>
+                  <p class="text_loc">
+                    Codissia Trade Fair Complex, Coimbatore, India
+                  </p>
+                  <p class="text_stall">Visit us at Hall A, STALL No. A22</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="text">
+                <div class="text_img">
+                  <img src="" alt="image" width="40%" />
+                </div>
+                <div class="text_details">
+                  <h4 class="text_title">IFFE EXPO 2022, Kolhapur</h4>
+                  <p class="text_date">19 NOV 2022 - 22 NOV 2022</p>
+                  <p class="text_para">
+                    IFFE EXPO 2022 will be held from 19-21 Nov 2022
+                  </p>
+                  <p class="text_loc">Shivaji University Kolhapur, India</p>
+                  <!-- <p class="text_stall">Visit us at Hall A, STALL No. A22</p> -->
+                </div>
+              </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <header>
       <div class="container-fluid p-0">
@@ -563,6 +627,7 @@
       gtag("config", "G-45WTYWR6PM");
     </script>
     <script src="./js/aos.js"></script>
+    <script src="./js/modal.js"></script>
 
     <script>
       AOS.init({
