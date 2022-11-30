@@ -27,22 +27,31 @@ main {
   margin-bottom: 4em;
 }
 
-.float_icons{
-  position: fixed;
-  bottom: 40px;
-    right: 40px;
-  display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
+.custom-box-shadow-style {
+  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+    0 1px 18px 0 rgb(0 0 0 / 12%);
+  border: 1px solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-.float, .info_btn {
+.float_icons {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.float,
+.info_btn {
   width: 35px;
   height: 35px;
   background-color: #25d366;
-  color: #FFF;
+  color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
@@ -52,12 +61,12 @@ main {
   align-items: center;
 }
 
-.my-flaot-icon{
+.my-flaot-icon {
   color: #fff;
   margin: 0 auto;
 }
 
-.info_btn{
+.info_btn {
   background-color: #ef4b3f;
   color: #fff;
   font-style: italic;
@@ -78,7 +87,8 @@ nav {
 }
 
 header {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../images/aristotle-header-dark.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/aristotle-header-dark.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -241,9 +251,9 @@ hr:not(.underline) {
 }
 
 .slick-track img {
-  width: auto;
+  width: 350px;
   height: 350px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .your-class {
@@ -464,25 +474,25 @@ span.navbar-toggler-icon.collapsed {
     color: var(--accent-red);
   }
   .navbar-collapse {
-  position: absolute;
-  top: 54px;
-  right: -100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  width: 100%;
-  transition: all 0.4s ease;
-  display: block;
-}
-.navbar-collapse.collapsing {
-  height: 100vh !important;
-  margin-left: 50%;
-  left: 50%;
-  transition: all 0.2s ease;
-}
-.navbar-collapse.show {
-  right: 0;
-} 
+    position: absolute;
+    top: 54px;
+    right: -100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    transition: all 0.4s ease;
+    display: block;
+  }
+  .navbar-collapse.collapsing {
+    height: 100vh !important;
+    margin-left: 50%;
+    left: 50%;
+    transition: all 0.2s ease;
+  }
+  .navbar-collapse.show {
+    right: 0;
+  }
 }
 
 /* sm */
@@ -505,7 +515,7 @@ span.navbar-toggler-icon.collapsed {
     flex-direction: row-reverse;
   }
 
-  .nav-items a img{
+  .nav-items a img {
     margin: 0;
   }
 }
