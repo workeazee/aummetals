@@ -27,13 +27,13 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-
     $('.splashLogo').addClass('puff-out-center-long')
     setTimeout(function () {
       $('#loading').hide();
-    }, 3000);
+    }, 1000);
   }
   else {
     $('.splashLogo').addClass('puff-out-center-short')
     setTimeout(function () {
       $('#loading').hide();
-    }, 2000);
+    }, 1000);
   }
 
   $('.navbar-toggler').on('click', function () {

@@ -169,7 +169,7 @@
   </div>
 
   <!-- The Modal -->
-  <div id="myModal" class="myModal" style="display: none">
+  <div id="myModal" class="myModal">
     <div class="myModal-content">
       <span class="close">&times;</span>
       <h1 class="myModal-header">VISIT US ON OUR UPCOMING EXHIBITIONS</h1>
@@ -177,29 +177,31 @@
       <div class="myModal-desc">
         <div class="slideshow-container">
           <div class="mySlides">
-            <div class="text">
-              <!-- <div class="text_img">
-                  <img src="" alt="image" width="40%" />
-                </div> -->
-              <div class="text_details">
-                <h4 class="text_title">IFEX 2023, Greater Noida</h4>
-                <p class="text_date">08 FEB 2023 - 10 FEB 2023</p>
-                <p class="text_para">
-                  IFEX 2023 will be held from 08-10 Feb 2023
-                </p>
-                <p class="text_loc">
-                  India Exposition Mart Ltd, Greater Noida, India
-                </p>
-                <p class="text_stall">Visit us at Hall 14, STALL No. A123</p>
+            <div class="info-container" style="display: flex; align-items: center;">
+              <div class="text_img" style="margin: 0.5rem;">
+                <img src="images/ifex-logo-header.jpg" alt="image" width="40%" />
+              </div>
+              <div class="text">
+                <div class="text_details">
+                  <h4 class="text_title">IFEX 2025, Kolkata, West Bengal</h4>
+                  <p class="text_date">07 FEB 2025 - 09 FEB 2025</p>
+                  <p class="text_para">
+                    IFEX 2025 will be held from 07-09 Feb 2025
+                  </p>
+                  <p class="text_loc">
+                    Biswa Bangla Mela Prangan, Kolkata, West Bengal
+                  </p>
+                  <p class="text_stall">Visit us at Hall A, STALL No. A15</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="mySlides">
+          <!-- <div class="mySlides" style="display: none;">
             <div class="text">
-              <!-- <div class="text_img">
+               <div class="text_img">
                   <img src="" alt="image" width="40%" />
-                </div> -->
+                </div> 
               <div class="text_details">
                 <h4 class="text_title">GIFA 2023, Germany</h4>
                 <p class="text_date">12 JUNE 2023 - 16 JUNE 2023</p>
@@ -212,14 +214,14 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div>-->
 
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+          <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a> -->
         </div>
         <br />
 
-        <div style="text-align: center">
+        <div style="text-align: center; display: none;">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
         </div>

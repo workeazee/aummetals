@@ -2,7 +2,7 @@
     display: block;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 200px;
     left: 50%;
     transform: translate(-50%, 0);
     top: 0;
@@ -18,7 +18,7 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 40%;
+    width: 45%;
     position: relative;
     border-radius: 10px;
 }
@@ -26,6 +26,8 @@
 .myModal-header {
     text-align: center;
     color: #ef4b3f;
+    font-size: 1.5rem !important;
+    padding: 0 0.2rem;
 }
 
 .close {
@@ -45,18 +47,17 @@
 }
 
 .mySlides {
-    display: none
+    display: none;
 }
 
-.myModal-desc{
+.myModal-desc {
     position: relative;
-    margin: 10px 0;
 }
 
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: 10px auto;
+    margin: 5px auto;
 }
 
 .prev,
@@ -91,35 +92,41 @@
     align-items: center;
 }
 
-.text_img{
-    width: 50%; 
+.text_img {
+    width: 50%;
 }
 
-.text_img img{
+.text_img img {
     object-fit: contain;
     width: 100%;
 }
 
-.text_details{
+.text_details {
     font-style: italic;
 }
 
-.text_title{
+.text_details p {
+    margin-bottom: 0.75rem;
+}
+
+.text_title {
     font-size: 1.563vw;
     margin-bottom: 0.521vw;
     line-height: 1.1;
 }
 
-.text_date{
+.text_date {
     color: #ef4b3f;
 }
 
-.text_para, .text_loc, .text_stall{
+.text_para,
+.text_loc,
+.text_stall {
     font-size: 1.042vw;
     color: #454545;
 }
 
-.text_stall{
+.text_stall {
     font-weight: bold;
     font-size: 1.263vw;
 }
@@ -140,41 +147,47 @@
     background-color: #717171;
 }
 
-
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
     .prev,
     .next,
     .text {
-        font-size: 11px
+        font-size: 11px;
     }
-        .text {
-            justify-content: center;
-        }
-        .text_details {
-            width: 85%;
-        }
-        .text_title {
-            font-size: 3.5vw;
-            margin-bottom: 0.521vw;
-            line-height: 1.1;
-        }
-    
-        .text_date {
-            color: #ef4b3f;
-            font-size: 3.5vw;
-        }
-    
-        .text_para,
-        .text_loc,
-        .text_stall {
-            font-size: 3vw;
-            color: #454545;
-        }
-    
-        .text_stall {
-            font-weight: bold;
-            font-size: 3.263vw;
-        }
+
+    .text {
+        justify-content: center;
+    }
+
+    .text_details {
+        width: 85%;
+    }
+
+    .text_title {
+        font-size: 3.5vw;
+        margin-bottom: 0.521vw;
+        line-height: 1.1;
+    }
+
+    .text_date {
+        color: #ef4b3f;
+        font-size: 3.5vw;
+    }
+
+    .text_para,
+    .text_loc,
+    .text_stall {
+        font-size: 3vw;
+        color: #454545;
+    }
+
+    .text_stall {
+        font-weight: bold;
+        font-size: 3.263vw;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
 }

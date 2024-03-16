@@ -118,7 +118,7 @@ p {
   text-align: justify;
 }
 hr:not(.underline) {
-  margin: 2em 0 !important;
+  margin: 1em 0 !important;
 }
 .home-header {
   height: 100vh;
@@ -524,7 +524,7 @@ span.navbar-toggler-icon.collapsed {
 
 @media (max-width: 992px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   .nav-items {
     flex-direction: row-reverse;
