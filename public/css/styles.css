@@ -11,9 +11,11 @@
   --scale-rate: 15;
   font-size: 14px;
 }
+
 * {
   font-family: "Lora", sans-serif !important;
 }
+
 html,
 body {
   overflow-x: hidden;
@@ -114,12 +116,15 @@ header::before {
   background-color: #212121;
   opacity: 0.5;
 }
+
 p {
   text-align: justify;
 }
+
 hr:not(.underline) {
   margin: 1em 0 !important;
 }
+
 .home-header {
   height: 100vh;
   padding: 8px;
@@ -184,10 +189,12 @@ hr:not(.underline) {
   font-size: 2rem;
   font-weight: bold;
 }
+
 .home-slider__title-about,
 .home-slider__title.text-decoration-none {
   cursor: auto;
 }
+
 .home-slider__txt {
   color: var(--paragraph);
   font-family: "Lora", sans-serif;
@@ -279,7 +286,7 @@ hr:not(.underline) {
   height: 30px;
 }
 
-.slick-dots > li button {
+.slick-dots>li button {
   visibility: hidden;
   padding: 0;
   margin: 10px 3px;
@@ -288,7 +295,7 @@ hr:not(.underline) {
   padding-right: 8px;
 }
 
-.slick-dots > li::marker {
+.slick-dots>li::marker {
   color: #bdc1c6;
   padding: 0;
   font-size: 30px;
@@ -297,7 +304,7 @@ hr:not(.underline) {
   display: inline-block;
 }
 
-.slick-dots > li.slick-active::marker {
+.slick-dots>li.slick-active::marker {
   color: var(--accent-red);
 }
 
@@ -408,6 +415,7 @@ span.navbar-toggler-icon.collapsed {
 .contact-icons img {
   margin-right: 10px;
 }
+
 #loading {
   position: fixed;
   height: 100vh;
@@ -438,9 +446,11 @@ span.navbar-toggler-icon.collapsed {
   .nav-logo .navbar-brand {
     display: none;
   }
+
   :root {
     --scale-rate: 7;
   }
+
   #navbarTogglerDemo03 {
     background-color: #fff;
     height: 100vh;
@@ -473,6 +483,7 @@ span.navbar-toggler-icon.collapsed {
     font-size: 15px;
     color: var(--accent-red);
   }
+
   .navbar-collapse {
     position: absolute;
     top: 54px;
@@ -484,12 +495,14 @@ span.navbar-toggler-icon.collapsed {
     transition: all 0.4s ease;
     display: block;
   }
+
   .navbar-collapse.collapsing {
     height: 100vh !important;
     margin-left: 50%;
     left: 50%;
     transition: all 0.2s ease;
   }
+
   .navbar-collapse.show {
     right: 0;
   }
@@ -511,6 +524,7 @@ span.navbar-toggler-icon.collapsed {
   h1 {
     font-size: 1.5rem;
   }
+
   .nav-items {
     flex-direction: row-reverse;
   }
@@ -526,12 +540,15 @@ span.navbar-toggler-icon.collapsed {
   h1 {
     font-size: 1.25rem;
   }
+
   .nav-items {
     flex-direction: row-reverse;
   }
+
   .nav-items a img {
     margin: 0;
   }
+
   .nav-logo .navbar-brand {
     display: none;
   }
@@ -570,6 +587,7 @@ span.navbar-toggler-icon.collapsed {
   border-radius: 0.9em;
   background-clip: content-box;
 }
+
 /* SCROLL BAR CSS ENDS*/
 
 /* animations */
@@ -588,11 +606,13 @@ span.navbar-toggler-icon.collapsed {
     transform: translateZ(0) rotateX(0);
   }
 }
+
 @keyframes puff-out-center {
   0% {
     transform: scale(1);
     opacity: 1;
   }
+
   100% {
     transform: scale(var(--scale-rate));
     opacity: 1;
@@ -602,9 +622,11 @@ span.navbar-toggler-icon.collapsed {
 .puff-out-center-long {
   animation: puff-out-center 3000ms ease-out both;
 }
+
 .puff-out-center-short {
   animation: puff-out-center 2000ms ease-out both;
 }
+
 .slit-in-horizontal {
   animation: slit-in-horizontal 0.45s ease-out both;
 }
